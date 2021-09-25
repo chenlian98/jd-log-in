@@ -1,0 +1,507 @@
+:root {
+    --all-width----: 990px; /*定义安全距离变量宽度*/
+}
+
+html {
+    font-size: 12px;
+    color: #999;
+    background-color: #fff;
+}
+
+header {
+    width: var(--all-width----);
+    margin: 10px auto;
+    height: 60px;
+}
+
+header .logo {
+    float: left;
+}
+
+header a {
+    float: left;
+    position: relative;
+}
+
+header .logo a span{
+    float: right;
+    background: url("../images/l-icon.png");
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 195px;
+}
+
+header .logo  a::before{
+    content: '';
+    display: inline-block;
+    background: url("../images/logo-201305-b.png");
+    width: 170px;
+    height: 60px;
+}
+
+
+header .investigate {
+    float: right;
+    margin-top: 40px;
+}
+header .investigate a {
+    line-height: 14px;
+    color: #999;
+    float: right;
+}
+header .investigate a span{
+    float: right;
+    line-height: 14px;
+}
+
+header .investigate  a::before{
+    content: '';
+    display: inline-block;
+    background: url("../images/q-icon.png");
+    width: 18px;
+    height: 14px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.wrap-title {
+    width: 100%;
+    background-color: #fff8f0;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.wrap-title .title {
+    color: #999;
+}
+.wrap-title .title::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icon-tips.png");
+    vertical-align: middle;
+}
+
+.wrap-title .title a{
+    color: #333;
+}
+.wrap-title .title a:hover{
+    text-decoration: underline;
+ }
+
+.logo-in-wrap {
+    width: 100%;
+    height: 475px;
+    background-color: #020F14;
+}
+.logo-in-wrap .logo-in {
+    width: var(--all-width----);
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+ }
+
+.logo-in-wrap .logo-in .pic{
+    width: 644px;
+    height: 100%;
+    background:url("../images/banner.jpg");
+    float: left;
+}
+
+.logo-in-wrap .logo-in .register{
+    width: 346px;
+    height: 400px;
+    background-color: #fff;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.logo-in-wrap .logo-in .register .title {
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #fff8f0;
+}
+
+.logo-in-wrap .logo-in .register .title i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icon-tips.png");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.logo-in-wrap .logo-in .register .tab {
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+    text-align: center;
+}
+.logo-in-wrap .logo-in .register .tab .l{
+    float: left;
+    width: 50%;
+}
+
+.logo-in-wrap .logo-in .register .tab a:hover{
+    font-weight: 700;
+    color: #e4393c;
+}
+.logo-in-wrap .logo-in .register .tab a.active{
+    font-weight: 700;
+    color: #e4393c;
+}
+.logo-in-wrap .logo-in .register .tab .r{
+    float: right;
+    width: 50%;
+}
+.logo-in-wrap .logo-in .register .tab span{
+    position: absolute;
+    left: 50%;
+    color: #f4f4f4;
+}
+.logo-in-wrap .logo-in .register .tab a{
+    color: #666;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo-in-wrap .logo-in .register .tab a.active{
+    font-weight: 700;
+    color: #e4393c;
+}
+
+.logo-in-wrap .logo-in .register .qr-code {
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+.logo-in-wrap .logo-in .register .qr-code .show-img{
+    width: 147px;
+    height: 147px;
+    transition: all 500ms linear;
+}
+.logo-in-wrap .logo-in .register .qr-code .show-img.move{
+   margin-right: 120px;
+}
+/* 隐藏的盒子*/
+.logo-in-wrap .logo-in .register .qr-code-none{
+    width: 141px;
+    height: 168px;
+    background: url("../images/phone-orange.png");
+    position: absolute;
+    top: -8%;
+    right: 10px;
+    display: none;
+}
+.logo-in-wrap .logo-in .register .qr-code-none.show{
+    display: block;
+}
+
+.logo-in-wrap .logo-in .register .bottom-text{
+    width: 257px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.logo-in-wrap .logo-in .register .bottom-text a{
+    color: #e4393c;
+    margin-right: 5px;
+ }
+
+.logo-in-wrap .logo-in .register .box{
+    width: 240px;
+    margin: 10px auto;
+    font-family: "microsoft yahei";
+}
+
+.logo-in-wrap .logo-in .register .box ul{
+    width: 100%;
+    height: 25px;
+}
+
+
+.logo-in-wrap .logo-in .register .box ul>li{
+    float: left;
+    margin-right: 15px;
+}
+
+.logo-in-wrap .logo-in .register .box ul>li:last-child{
+    margin-right: 0;
+}
+.logo-in-wrap .logo-in .register .box ul li::before{
+    width: 25px;
+    height: 25px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+.logo-in-wrap .logo-in .register .box ul li:nth-child(1):before{
+    background: url("../images/qr-coagent.png") 26px 0;
+}
+
+.logo-in-wrap .logo-in .register .box ul li:nth-child(2):before{
+    background: url("../images/qr-coagent.png") 53px 0;
+}
+
+.logo-in-wrap .logo-in .register .box ul li:nth-child(3):before{
+    background: url("../images/qr-coagent.png") 80px 0;
+}
+
+.logo-in-wrap .logo-in .register .ico {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background: #fcfcfc;
+    border-top: 1px solid #f4f4f4;
+    padding: 0 20px;
+}
+
+.logo-in-wrap .logo-in .register .ico .l{
+    float: left;
+}
+
+.logo-in-wrap .logo-in .register .ico .l a::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 18px;
+}
+
+.logo-in-wrap .logo-in .register .ico .l a:nth-child(1)::before{
+    background: url("../images/QQ-weixin.png") 38px 0;
+    margin: 0 6px;
+}
+
+.logo-in-wrap .logo-in .register .ico .l span{
+    margin-left: 6px;
+    color: #ccc;
+}
+.logo-in-wrap .logo-in .register .ico .l a:nth-child(3)::before{
+    background: url("../images/QQ-weixin.png") 19px 0;
+    margin: 0 6px;
+}
+
+.logo-in-wrap .logo-in .register .ico .r{
+    float: right;
+}
+
+.logo-in-wrap .logo-in .register .ico .r a{
+    color: #b61d1d;
+}
+
+.logo-in-wrap .logo-in .register .ico .r a:hover{
+    text-decoration: underline;
+}
+.logo-in-wrap .logo-in .register .ico .r::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url("../images/pwd-icons-new.png") 16px 99px;
+}
+
+.logo-in-wrap .logo-in .register .ico a{
+    color: #666;
+}
+
+.logo-in-wrap .logo-in .register .ico .r a{
+    font-size: 14px;
+}
+
+/*扫一扫大盒子*/
+.logo-in-wrap .logo-in .register .logo-in-box{
+    display: none;
+}
+
+.logo-in-wrap .logo-in .register .logo-in-box.reveal{
+    display: block;
+}
+
+/*登录注册表单*/
+.logo-in-wrap .logo-in .register .menu {
+    width: 304px;
+    margin: 23px auto 0 auto;
+    display: none;
+    position: relative;
+}
+.logo-in-wrap .logo-in .register .menu.menu-show {
+    display: block;
+}
+/* warning 警告提示框*/
+.logo-in-wrap .logo-in .register .menu .warning {
+    width: 303px;
+    line-height: 23px;
+    color: #e4393c;
+    border: 1px solid #faccc6;
+    background: #ffebeb;
+    position: absolute;
+    top: -16px;
+    display: none;
+}
+.logo-in-wrap .logo-in .register .menu .warning.blank {
+    display: block;
+}
+.logo-in-wrap .logo-in .register .menu .warning span {
+    padding-left: 40px;
+}
+
+.logo-in-wrap .logo-in .register .menu .warning::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/pwd-icons-new.png");
+    background-position: -104px -49px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+}
+/*
+        增加类名更改图标
+*/
+.logo-in-wrap .logo-in .register .menu .menu-user span.active {
+    background-position: 0 -96px;/*用户坐标*/
+    border: 1px solid #e4393c;
+}
+.logo-in-wrap .logo-in .register .menu .menu-password span.active {
+    background-position: -48px -96px; /*密码图坐标*/
+    border: 1px solid #e4393c;
+}
+.logo-in-wrap .logo-in .register .menu .menu-user input.active,
+.logo-in-wrap .logo-in .register .menu .menu-password input.active{
+    border: 1px solid #e4393c;
+}
+
+.logo-in-wrap .logo-in .register .menu .menu-user i,
+.logo-in-wrap .logo-in .register .menu .menu-password i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/pwd-icons-new.png") -25px -143px no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+.logo-in-wrap .logo-in .register .menu i.active {
+    display: block;
+}
+
+
+.logo-in-wrap .logo-in .register .menu .menu-user,
+.logo-in-wrap .logo-in .register .menu .menu-password,
+.logo-in-wrap .logo-in .register .menu input {
+    width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+}
+
+
+
+.logo-in-wrap .logo-in .register .menu input {
+    padding-left: 50px;
+    line-height: 38px;
+    border: 1px solid #bdbdbd;
+}
+
+.logo-in-wrap .logo-in .register .menu .menu-user {
+    position: relative;
+    top: 15px;
+}
+.logo-in-wrap .logo-in .register .menu .menu-password {
+    position: relative;
+    top: 25px;
+    margin-bottom: 50px;
+}
+
+.logo-in-wrap .logo-in .register .menu .menu-user span,
+.logo-in-wrap .logo-in .register .menu .menu-password span {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+}
+
+.logo-in-wrap .logo-in .register .menu .menu-user span {
+    background: url("../images/pwd-icons-new.png");
+    left: 0;
+    top: 0;
+}
+
+.logo-in-wrap .logo-in .register .menu .menu-password span {
+    background: url("../images/pwd-icons-new.png") 72px -348px;
+    left: 0;
+    top: 0;
+}
+.logo-in-wrap .logo-in .register .menu .forget {
+    text-align: right;
+    color: #666;
+}
+.logo-in-wrap .logo-in .register .menu .forget a{
+    color: #666;
+}
+
+.logo-in-wrap .logo-in .register .menu .forget a:hover {
+    text-decoration: underline;
+    color: #E4393C;
+}
+.logo-in-wrap .logo-in .register .menu .btn-register {
+    margin-top: 30px;
+    background: #e4393c;
+    border: 1px solid #e85356;
+    height: 31px;
+    line-height: 31px;
+    font-size: 20px;
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+}
+
+.logo-in-wrap .logo-in .register .menu .btn-register a{
+    color: #fff;
+    display: block;
+    width: 304px;
+    height: 33px;
+}
+
+
+
+/*底部*/
+footer {
+    width: var(--all-width----);
+    margin: 20px auto;
+}
+
+footer .footer-a {
+    display: flex;
+    width: 100%;
+}
+
+footer  a{
+    color: #666;
+    margin: 0 18px;
+    line-height: 18px;
+    float: left;
+}
+
+footer  .footer-bottom{
+    text-align: center;
+    margin-top: 10px;
+}
